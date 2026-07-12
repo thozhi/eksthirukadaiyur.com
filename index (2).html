@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E.K.S Thirukadaiyur – A to Z Marriage Management Service</title>
+<meta name="description" content="E.K.S Thirukadaiyur — A to Z Marriage Management Service in Thirukkadaiyur, Mayiladuthurai District. Catering, marriage hall & accommodation, mehendi, photography, flower garlands and nadaswaram, all handled responsibly.">
+<meta property="og:title" content="E.K.S Thirukadaiyur – A to Z Marriage Management Service">
+<meta property="og:description" content="உங்கள் தேவை எங்கள் சேவை — Your Need, Our Service. Catering, marriage hall, mehendi, photography, garlands & nadaswaram in Thirukkadaiyur, Mayiladuthurai District.">
+<meta property="og:type" content="website">
+<meta name="keywords" content="E.K.S Thirukadaiyur, marriage management service Thirukkadaiyur, wedding catering Mayiladuthurai, marriage hall Thirukkadaiyur, Ezhilnambi">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "E.K.S Thirukadaiyur - A to Z Marriage Management Service",
+  "description": "A to Z marriage management service offering catering, marriage hall and accommodation, mehendi, photography, flower garlands and nadaswaram programmes.",
+  "telephone": "+91-97517-30232",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "34, South Street",
+    "addressLocality": "Thirukkadaiyur",
+    "addressRegion": "Mayiladuthurai District",
+    "addressCountry": "IN"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Catamaran:wght@500;700;800;900&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --maroon: #6E1B26;
+    --maroon-deep: #4E0F18;
+    --gold: #C79A3E;
+    --gold-light: #E8C77A;
+    --turmeric: #D98A2B;
+    --ivory: #FBF3E6;
+    --ivory-soft: #F4E9D8;
+    --leaf: #2C4634;
+    --leaf-deep: #1D3024;
+    --ink: #241511;
+    --ink-soft: #4A362F;
+    --shadow: 0 20px 50px rgba(78,15,24,0.18);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background: var(--ivory);
+    color: var(--ink);
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* language toggling — each span carries its own font, visibility keyed off body class */
+  .t-en{ font-family:'Cormorant Garamond', serif; }
+  .t-ta{ font-family:'Catamaran', sans-serif; }
+  body.lang-ta .t-en{ display:none; }
+  body.lang-en .t-ta{ display:none; }
+  p .t-en, li .t-en, span.body-text.t-en{ font-family:'Lora', serif; }
+  p .t-ta, li .t-ta, span.body-text.t-ta{ font-family:'Noto Sans Tamil', sans-serif; }
+
+  .fade-swap{ animation: swapIn .5s ease; }
+  @keyframes swapIn{ from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);} }
+
+  a{ color:inherit; text-decoration:none; }
+  img{ display:block; max-width:100%; }
+
+  .container{ max-width:1180px; margin:0 auto; padding:0 28px; }
+
+  /* ---------- kolam pattern texture ---------- */
+  .kolam-bg{
+    position:absolute; inset:0; opacity:.06; pointer-events:none;
+    background-image: radial-gradient(var(--gold) 1.4px, transparent 1.6px);
+    background-size: 26px 26px;
+  }
+
+  /* ---------- header ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background: rgba(251,243,230,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(199,154,62,0.35);
+    transition: box-shadow .3s ease;
+  }
+  header.scrolled{ box-shadow: 0 6px 24px rgba(78,15,24,0.08); }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 28px; max-width:1180px; margin:0 auto;
+  }
+  .brandmark{ display:flex; align-items:center; gap:12px; }
+  .brandmark svg{ width:40px; height:40px; flex-shrink:0; }
+  .brand-name{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1.35rem; color:var(--maroon-deep); letter-spacing:.5px; line-height:1.1;}
+  .brand-name small{ display:block; font-family:'Catamaran',sans-serif; font-size:.62rem; letter-spacing:2.5px; color:var(--gold); font-weight:700; text-transform:uppercase; margin-top:2px;}
+
+  .nav-actions{ display:flex; align-items:center; gap:18px; }
+  .lang-toggle{
+    display:flex; border:1.5px solid var(--gold); border-radius:30px; overflow:hidden;
+    font-family:'Catamaran',sans-serif; font-weight:700; font-size:.78rem;
+  }
+  .lang-toggle button{
+    padding:7px 16px; background:transparent; border:none; cursor:pointer; color:var(--maroon-deep);
+    transition: background .25s, color .25s; letter-spacing:.5px;
+  }
+  .lang-toggle button.active{ background:var(--maroon); color:var(--ivory); }
+
+  .btn{
+    display:inline-block; padding:11px 24px; border-radius:2px; font-weight:700;
+    font-family:'Catamaran',sans-serif; font-size:.82rem; letter-spacing:.8px; text-transform:uppercase;
+    cursor:pointer; border:1.5px solid transparent; transition: all .3s ease;
+  }
+  .btn-gold{ background:linear-gradient(135deg, var(--gold-light), var(--gold)); color:var(--maroon-deep); box-shadow:0 8px 20px rgba(199,154,62,.35);}
+  .btn-gold:hover{ transform:translateY(-2px); box-shadow:0 12px 26px rgba(199,154,62,.45);}
+  .btn-outline{ border-color:var(--gold); color:var(--ivory); }
+  .btn-outline:hover{ background:rgba(232,199,122,.12); }
+
+  .nav-cta{ display:none; }
+  @media(min-width:720px){ .nav-cta{ display:inline-block; } }
+
+  .contact-icons{ display:flex; gap:9px; }
+  .icon-btn{
+    width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    border:1.5px solid var(--gold); transition: transform .25s ease, background .25s ease; flex-shrink:0;
+  }
+  .icon-btn svg{ width:17px; height:17px; }
+  .icon-btn:hover{ transform:translateY(-2px); background:rgba(199,154,62,.14); }
+  .icon-btn.whatsapp{ border-color:#3F6B4E; }
+  .icon-btn.whatsapp svg{ stroke:#3F6B4E; }
+  .icon-btn.call{ border-color:var(--maroon); }
+  .icon-btn.call svg{ stroke:var(--maroon); }
+
+  .btn-whatsapp{
+    background:linear-gradient(135deg,#4A7859,#2C4634); color:var(--ivory);
+    box-shadow:0 8px 20px rgba(44,70,52,.35);
+  }
+  .btn-whatsapp:hover{ transform:translateY(-2px); box-shadow:0 12px 26px rgba(44,70,52,.45); }
+  .btn svg{ width:15px; height:15px; vertical-align:-2px; margin-right:6px; stroke:currentColor; }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative; min-height:100vh;
+    background: radial-gradient(ellipse at top, #7d2230 0%, var(--maroon) 45%, var(--maroon-deep) 100%);
+    display:flex; align-items:center; justify-content:center;
+    padding: 140px 24px 90px;
+    overflow:hidden;
+  }
+  .hero-arch{
+    position:absolute; top:0; left:50%; transform:translateX(-50%);
+    width:min(880px, 96vw); opacity:.9; pointer-events:none;
+  }
+  .hero-arch path, .hero-arch circle, .hero-arch line{
+    stroke-dasharray: 2600; stroke-dashoffset:2600;
+    animation: draw 2.6s ease forwards .3s;
+  }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+
+  .hero-inner{ position:relative; z-index:2; text-align:center; max-width:820px; }
+  .hero-eyebrow{
+    font-family:'Catamaran',sans-serif; font-weight:700; letter-spacing:4px; font-size:.8rem;
+    color:var(--gold-light); text-transform:uppercase; margin-bottom:22px; opacity:0;
+    animation: riseIn .9s ease forwards 1.6s;
+  }
+  .hero h1.t-ta{
+    font-size:clamp(2.6rem, 7vw, 4.4rem); color:var(--ivory); font-weight:800; line-height:1.25;
+    margin-bottom:10px; opacity:0; animation: riseIn 1s ease forwards 1.8s;
+  }
+  .hero h1.t-en{
+    font-size:clamp(2rem, 5.4vw, 3.2rem); color:var(--ivory); font-weight:500; font-style:italic; line-height:1.3;
+    margin-bottom:10px; opacity:0; animation: riseIn 1s ease forwards 1.8s;
+  }
+  .hero-sub{
+    color: var(--gold-light); font-size:1.05rem; margin:20px auto 8px; max-width:520px;
+    opacity:0; animation: riseIn 1s ease forwards 2.1s;
+  }
+  .hero-sub .t-en{ font-style:italic; font-family:'Lora',serif; }
+  .hero-sub .t-ta{ font-family:'Noto Sans Tamil',sans-serif; }
+  @keyframes riseIn{ from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);} }
+
+  .hero-actions{
+    display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:36px;
+    opacity:0; animation: riseIn 1s ease forwards 2.4s;
+  }
+
+  .hero-address{
+    margin-top:46px; color:rgba(251,243,230,.75); font-size:.9rem; letter-spacing:.5px;
+    opacity:0; animation: riseIn 1s ease forwards 2.6s;
+  }
+  .hero-address .t-ta{ font-family:'Noto Sans Tamil',sans-serif; }
+
+  /* ---------- section shells ---------- */
+  section{ position:relative; padding:100px 0; }
+  .eyebrow{
+    font-family:'Catamaran',sans-serif; font-weight:700; letter-spacing:3.5px; font-size:.78rem;
+    color:var(--turmeric); text-transform:uppercase; margin-bottom:14px; display:block;
+  }
+  h2.section-title{
+    font-size:clamp(1.9rem,4vw,2.7rem); color:var(--maroon-deep); margin-bottom:8px; line-height:1.25;
+  }
+  h2.section-title .t-ta{ font-weight:800; }
+  h2.section-title .t-en{ font-weight:500; font-style:italic; display:block; font-size:.62em; color:var(--ink-soft); margin-top:6px;}
+  .section-lead{ max-width:640px; color:var(--ink-soft); font-size:1.02rem; line-height:1.7; }
+
+  .divider{
+    width:100%; height:56px; display:flex; align-items:center; justify-content:center; opacity:.8;
+  }
+  .divider svg{ height:34px; }
+
+  /* ---------- proprietor strip ---------- */
+  .strip{
+    background: var(--ivory-soft); border-top:1px solid rgba(199,154,62,.35); border-bottom:1px solid rgba(199,154,62,.35);
+    padding:34px 0;
+  }
+  .strip-inner{ display:flex; align-items:center; gap:22px; flex-wrap:wrap; justify-content:center; text-align:center; }
+  .strip-badge{
+    width:58px; height:58px; border-radius:50%; border:1.5px solid var(--gold);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .strip-badge svg{ width:28px; height:28px; }
+  .strip-text .t-ta{ font-weight:700; font-size:1.05rem; color:var(--maroon-deep); }
+  .strip-text .t-en{ display:block; font-style:italic; color:var(--ink-soft); font-size:.92rem; margin-top:3px;}
+  .strip-text .role{ color:var(--gold); font-weight:600; font-size:.85rem; letter-spacing:.5px; display:block; margin-top:4px;}
+
+  /* ---------- services ---------- */
+  .services-grid{
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(270px,1fr)); gap:26px; margin-top:52px;
+  }
+  .card{
+    background:#fff; border-radius:6px; overflow:hidden; box-shadow: var(--shadow);
+    border:1px solid rgba(199,154,62,.25);
+    opacity:0; transform:translateY(26px); transition: opacity .7s ease, transform .7s ease;
+  }
+  .card.in-view{ opacity:1; transform:translateY(0); }
+  .card-media{ height:180px; position:relative; overflow:hidden; background:linear-gradient(135deg,#7d2230,#4E0F18); }
+  .card-media img{ width:100%; height:100%; object-fit:cover; transition: transform .6s ease; }
+  .card:hover .card-media img{ transform:scale(1.07); }
+  .card-media.icon-media{ display:flex; align-items:center; justify-content:center; }
+  .card-media.icon-media svg{ width:64px; height:64px; }
+  .card-body{ padding:24px 22px 26px; }
+  .card-body .t-ta{ font-weight:700; font-size:1.15rem; color:var(--maroon-deep); display:block; }
+  .card-body .t-en{ display:block; font-style:italic; color:var(--ink-soft); font-size:.92rem; margin-top:4px; }
+  .card-tag{
+    display:inline-block; margin-top:12px; font-family:'Catamaran',sans-serif; font-size:.7rem; font-weight:700;
+    letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); border-top:1px solid rgba(199,154,62,.3); padding-top:10px; width:100%;
+  }
+
+  .assurance-banner{
+    margin-top:56px; text-align:center; padding:26px 24px; border:1px dashed rgba(199,154,62,.6); border-radius:4px;
+    background: rgba(199,154,62,.06);
+  }
+  .assurance-banner .t-ta{ font-weight:700; color:var(--maroon-deep); font-size:1.05rem; }
+  .assurance-banner .t-en{ display:block; font-style:italic; color:var(--ink-soft); margin-top:6px; }
+
+  /* ---------- trust banner ---------- */
+  .trust{
+    background: linear-gradient(120deg, var(--leaf-deep), var(--leaf));
+    color: var(--ivory); text-align:center; padding:90px 24px; position:relative;
+  }
+  .trust::before, .trust::after{
+    content:""; position:absolute; left:50%; transform:translateX(-50%); width:120px; height:2px; background:var(--gold);
+  }
+  .trust::before{ top:36px; } .trust::after{ bottom:36px; }
+  .trust .t-ta{ font-size:clamp(1.5rem,3.4vw,2.3rem); font-weight:700; display:block; margin-bottom:14px; }
+  .trust .t-en{ font-style:italic; font-size:1.05rem; color:var(--gold-light); max-width:560px; margin:0 auto; display:block; line-height:1.7;}
+
+  /* ---------- gallery ---------- */
+  .contact-block{
+    margin-top:14px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:22px;
+    background: var(--ivory-soft); border:1px solid rgba(199,154,62,.35); border-radius:6px; padding:28px 30px;
+  }
+  .contact-number{ font-family:'Cormorant Garamond',serif; font-size:1.7rem; font-weight:600; color:var(--maroon-deep); letter-spacing:.5px; }
+  .contact-actions{ display:flex; gap:14px; flex-wrap:wrap; }
+
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:44px;
+  }
+  .gallery-grid img{ width:100%; height:220px; object-fit:cover; border-radius:4px; box-shadow:var(--shadow); }
+  .gallery-grid a:nth-child(1) img, .gallery-grid a:nth-child(4) img{ height:280px; margin-top:-30px; }
+  @media(max-width:900px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } .gallery-grid a:nth-child(1) img,.gallery-grid a:nth-child(4) img{ margin-top:0; } }
+  @media(max-width:520px){ .gallery-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- footer / contact ---------- */
+  footer{ background: var(--maroon-deep); color: var(--ivory); padding:80px 0 30px; position:relative; }
+  .footer-grid{ display:grid; grid-template-columns:1.2fr .8fr .8fr .9fr; gap:36px; }
+  @media(max-width:900px){ .footer-grid{ grid-template-columns:1fr 1fr; gap:32px;} }
+  @media(max-width:560px){ .footer-grid{ grid-template-columns:1fr; gap:32px;} }
+  .footer-contact-link{ display:flex; align-items:center; gap:8px; color:var(--gold-light) !important; font-weight:600; margin-bottom:10px; }
+  .footer-contact-link svg{ width:16px; height:16px; flex-shrink:0; }
+  .footer-brand .brand-name{ color:var(--ivory); }
+  .footer-brand .brand-name small{ color:var(--gold-light); }
+  .footer-col h4{ font-family:'Catamaran',sans-serif; font-size:.78rem; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:16px; }
+  .footer-col p, .footer-col div{ color:rgba(251,243,230,.85); line-height:1.85; font-size:.96rem; }
+  .footer-col .t-en{ font-family:'Lora',serif; }
+  .footer-col .t-ta{ font-family:'Noto Sans Tamil',sans-serif; }
+  .footer-bottom{
+    margin-top:64px; padding-top:26px; border-top:1px solid rgba(232,199,122,.2);
+    text-align:center; font-size:.82rem; color:rgba(251,243,230,.55);
+  }
+
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s ease; }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.01ms !important; animation-delay:0ms !important; transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+<body class="lang-ta">
+
+<header id="siteHeader">
+  <div class="nav-inner">
+    <div class="brandmark">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" stroke="#C79A3E" stroke-width="1.5"/>
+        <path d="M30 12 L34 24 L46 24 L36 31 L40 43 L30 36 L20 43 L24 31 L14 24 L26 24 Z" stroke="#C79A3E" stroke-width="1.3" fill="none"/>
+      </svg>
+      <div class="brand-name">E.K.S Thirukadaiyur<small class="t-ta">A முதல் Z வரை திருமண மேலாண்மை சேவை</small><small class="t-en">A to Z Marriage Management Service</small></div>
+    </div>
+    <div class="nav-actions">
+      <div class="contact-icons">
+        <a href="tel:+919751730232" class="icon-btn call" aria-label="Call">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <a href="https://wa.me/919751730232?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D%21%20E.K.S%20Thirukadaiyur%20-%20%E0%AE%89%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AE%E0%AF%81%E0%AE%A9%E0%AF%8D%E0%AE%AA%E0%AE%A4%E0%AE%BF%E0%AE%B5%E0%AF%81%20%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D.%20%E0%AE%A4%E0%AF%87%E0%AE%A4%E0%AE%BF%2C%20%E0%AE%A8%E0%AE%BF%E0%AE%95%E0%AE%B4%E0%AF%8D%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%BF%20%E0%AE%B5%E0%AE%95%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%AF%E0%AE%BE%E0%AE%A9%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%AA%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AE%BF%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AA%E0%AE%95%E0%AE%BF%E0%AE%B0%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D%2C%20%E0%AE%A4%E0%AE%AF%E0%AE%B5%E0%AF%81%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%A4%E0%AF%81%20%E0%AE%95%E0%AE%BF%E0%AE%9F%E0%AF%88%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AE%A9%E0%AF%8D%E0%AE%AE%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%88%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%A4%E0%AF%86%E0%AE%B0%E0%AE%BF%E0%AE%B5%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B5%E0%AF%81%E0%AE%AE%E0%AF%8D.%20%E0%AE%A8%E0%AE%A9%E0%AF%8D%E0%AE%B1%E0%AE%BF%21" target="_blank" rel="noopener" class="icon-btn whatsapp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M8.5 9.5c0 3 2.5 5.5 5.5 5.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <div class="lang-toggle">
+        <button id="btnTa" class="active" onclick="setLang('ta')">தமிழ்</button>
+        <button id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+      <a href="#contact" class="btn btn-gold nav-cta"><span class="t-ta">விசாரிக்க</span><span class="t-en">Enquire Now</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="hero-arch" viewBox="0 0 880 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M60 420 L60 180 Q60 60 200 40 Q300 20 440 20 Q580 20 680 40 Q820 60 820 180 L820 420" stroke="#E8C77A" stroke-width="2"/>
+    <path d="M100 420 L100 200 Q100 100 220 78 Q320 60 440 60 Q560 60 660 78 Q780 100 780 200 L780 420" stroke="#E8C77A" stroke-width="1.2" opacity=".6"/>
+    <circle cx="440" cy="34" r="10" stroke="#E8C77A" stroke-width="1.5"/>
+    <path d="M440 8 L440 24 M428 16 L452 16" stroke="#E8C77A" stroke-width="1.5"/>
+    <path d="M200 40 Q440 -10 680 40" stroke="#E8C77A" stroke-width="1.2" opacity=".5"/>
+  </svg>
+  <div class="kolam-bg"></div>
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Thirukkadaiyur &nbsp;•&nbsp; Mayiladuthurai District</span>
+    <h1 class="t-ta">உங்கள் தேவை எங்கள் சேவை</h1>
+    <h1 class="t-en">Your Need, Our Service</h1>
+    <p class="hero-sub">
+      <span class="t-ta">திருமணம் முதல் சுபநிகழ்ச்சிகள் வரை — கேட்டரிங், மண்டபம், அலங்காரம் என அனைத்தையும் பொறுப்புடன் செய்து தருகிறோம்.</span>
+      <span class="t-en">From weddings to every auspicious milestone — catering, venue and decor, handled responsibly, start to finish.</span>
+    </p>
+    <div class="hero-actions">
+      <a href="tel:+919751730232" class="btn btn-gold">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="t-ta">அழைக்க</span><span class="t-en">Call Now</span>
+      </a>
+      <a href="https://wa.me/919751730232?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D%21%20E.K.S%20Thirukadaiyur%20-%20%E0%AE%89%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AE%E0%AF%81%E0%AE%A9%E0%AF%8D%E0%AE%AA%E0%AE%A4%E0%AE%BF%E0%AE%B5%E0%AF%81%20%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D.%20%E0%AE%A4%E0%AF%87%E0%AE%A4%E0%AE%BF%2C%20%E0%AE%A8%E0%AE%BF%E0%AE%95%E0%AE%B4%E0%AF%8D%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%BF%20%E0%AE%B5%E0%AE%95%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%AF%E0%AE%BE%E0%AE%A9%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%AA%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AE%BF%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AA%E0%AE%95%E0%AE%BF%E0%AE%B0%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D%2C%20%E0%AE%A4%E0%AE%AF%E0%AE%B5%E0%AF%81%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%A4%E0%AF%81%20%E0%AE%95%E0%AE%BF%E0%AE%9F%E0%AF%88%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AE%A9%E0%AF%8D%E0%AE%AE%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%88%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%A4%E0%AF%86%E0%AE%B0%E0%AE%BF%E0%AE%B5%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B5%E0%AF%81%E0%AE%AE%E0%AF%8D.%20%E0%AE%A8%E0%AE%A9%E0%AF%8D%E0%AE%B1%E0%AE%BF%21" target="_blank" rel="noopener" class="btn btn-whatsapp">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span class="t-ta">வாட்ஸ்அப்</span><span class="t-en">WhatsApp</span>
+      </a>
+      <a href="#services" class="btn btn-outline"><span class="t-ta">சேவைகளைப் பார்க்க</span><span class="t-en">View Services</span></a>
+    </div>
+    <div class="hero-address">
+      <span class="t-ta">34, தெற்கு வீதி, திருக்கடையூர், மயிலாடுதுறை மாவட்டம்</span>
+      <span class="t-en">34, South Street, Thirukkadaiyur, Mayiladuthurai District</span>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="container strip-inner reveal">
+    <div class="strip-badge">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 L23 16 L33 16 L25 22 L28 32 L20 26 L12 32 L15 22 L7 16 L17 16 Z" stroke="#C79A3E" stroke-width="1.3"/></svg>
+    </div>
+    <div class="strip-text">
+      <span class="role t-ta">உங்கள்,</span>
+      <span class="role t-en">Yours,</span>
+      <span class="t-ta">எம். என். எழில்நம்பி, M.C.A., B.G.L.</span>
+      <span class="t-en">M. N. Ezhilnambi, M.C.A., B.G.L.</span>
+      <span class="role t-ta">முன்னாள் ஊராட்சி தலைவர், திருக்கடையூர்</span>
+      <span class="role t-en">Former Panchayat President, Thirukadaiyur</span>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <span class="eyebrow t-ta">சேவைகள்</span>
+    <span class="eyebrow t-en">Our Services</span>
+    <h2 class="section-title">
+      <span class="t-ta">A முதல் Z வரை, அனைத்தும் ஒரே கூரையின் கீழ்</span>
+      <span class="t-en">Everything from A to Z, under one roof</span>
+    </h2>
+    <p class="section-lead t-ta body-text">திருமணம் மற்றும் சுப நிகழ்ச்சிகளுக்கு தேவையான அனைத்து ஏற்பாடுகளையும் எங்கள் அனுபவமிக்க குழு பொறுப்புடன் கவனித்துக் கொள்ளும்.</p>
+    <p class="section-lead t-en body-text">Every arrangement your celebration needs, planned and delivered by an experienced local team you can rely on.</p>
+
+    <div class="services-grid">
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1567530331069-630c6a3926f3?w=800&q=80" alt="Traditional South Indian catering"></div>
+        <div class="card-body">
+          <span class="t-ta">கேட்டரிங் சர்வீஸ்</span>
+          <span class="t-en">Catering Service</span>
+          <span class="card-tag t-ta">பாரம்பரிய விருந்து ஏற்பாடு</span>
+          <span class="card-tag t-en">Traditional feast, planned end to end</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?w=800&q=80" alt="Traditional South Indian marriage hall decoration"></div>
+        <div class="card-body">
+          <span class="t-ta">தங்குமிடம் & மண்டபம்</span>
+          <span class="t-en">Accommodation & Marriage Hall</span>
+          <span class="card-tag t-ta">விருந்தினர் தங்குமிடம் உட்பட</span>
+          <span class="card-tag t-en">Halls with guest stay arranged</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1650873441618-7b754482bddd?w=800&q=80" alt="Traditional Tamil Nadu wedding silk saree drape"></div>
+        <div class="card-body">
+          <span class="t-ta">திருமணம் & சுப நிகழ்ச்சிகள்</span>
+          <span class="t-en">Weddings & Milestone Celebrations</span>
+          <span class="card-tag t-ta">60, 70, 80ம் கல்யாணம் உட்பட</span>
+          <span class="card-tag t-en">Shashtiabdapoorthi, Bheemaratha Shanthi, Sathabhishekam</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media icon-media">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="18" width="34" height="26" rx="2" stroke="#E8C77A" stroke-width="1.5"/>
+            <path d="M42 26 L56 18 L56 44 L42 36 Z" stroke="#E8C77A" stroke-width="1.5"/>
+            <circle cx="25" cy="31" r="7" stroke="#E8C77A" stroke-width="1.3"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="t-ta">வீடியோ, போட்டோஸ்</span>
+          <span class="t-en">Video & Photography</span>
+          <span class="card-tag t-ta">உங்கள் நினைவுகளை பதிவு செய்ய</span>
+          <span class="card-tag t-en">Capturing every ceremony in detail</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1686865604150-43f95d61416c?w=800&q=80" alt="Mehendi henna hands"></div>
+        <div class="card-body">
+          <span class="t-ta">மெஹந்தி</span>
+          <span class="t-en">Mehendi</span>
+          <span class="card-tag t-ta">நிபுணர்களால் அலங்காரம்</span>
+          <span class="card-tag t-en">Skilled artists for the occasion</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media"><img src="https://images.unsplash.com/photo-1782309088131-e376ec2487de?w=800&q=80" alt="Jasmine flower garlands"></div>
+        <div class="card-body">
+          <span class="t-ta">பூ மாலைகள்</span>
+          <span class="t-en">Flower Garlands</span>
+          <span class="card-tag t-ta">அழகிய பூ அலங்காரம்</span>
+          <span class="card-tag t-en">Elegant floral décor</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media icon-media">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 40 Q30 30 54 24" stroke="#E8C77A" stroke-width="1.6"/>
+            <circle cx="54" cy="24" r="5" stroke="#E8C77A" stroke-width="1.4"/>
+            <circle cx="10" cy="40" r="3" stroke="#E8C77A" stroke-width="1.4"/>
+            <path d="M18 38 Q22 36 25 33" stroke="#E8C77A" stroke-width="1.1" opacity=".7"/>
+            <path d="M28 36 Q32 34 35 31" stroke="#E8C77A" stroke-width="1.1" opacity=".7"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <span class="t-ta">நாதஸ்வர நிகழ்ச்சிகள்</span>
+          <span class="t-en">Nadaswaram Programmes</span>
+          <span class="card-tag t-ta">மங்கல இசை நிகழ்வுகள்</span>
+          <span class="card-tag t-en">Traditional auspicious music</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="assurance-banner reveal">
+      <span class="t-ta">அனைத்து வேலைகளையும் பொறுப்பாக செய்து தரப்படும்.</span>
+      <span class="t-en">All arrangements will be undertaken responsibly.</span>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container">
+    <span class="t-ta reveal">நம்பி வாருங்கள், வாழ்த்தி அனுப்புகிறோம்.</span>
+    <span class="t-en reveal">Come with confidence; we will send you off with our best wishes and satisfaction.</span>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <span class="eyebrow t-ta">தொடர்பு</span>
+    <span class="eyebrow t-en">Get In Touch</span>
+    <h2 class="section-title">
+      <span class="t-ta">உங்கள் நிகழ்ச்சியைப் பற்றி பேசலாம்</span>
+      <span class="t-en">Let's talk about your celebration</span>
+    </h2>
+    <div class="contact-block reveal">
+      <div class="contact-number">
+        <span class="t-ta">+91 97517 30232</span>
+        <span class="t-en">+91 97517 30232</span>
+      </div>
+      <div class="contact-actions">
+        <a href="tel:+919751730232" class="btn btn-gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="t-ta">அழைக்க</span><span class="t-en">Call Now</span>
+        </a>
+        <a href="https://wa.me/919751730232?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D%21%20E.K.S%20Thirukadaiyur%20-%20%E0%AE%89%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AE%E0%AF%81%E0%AE%A9%E0%AF%8D%E0%AE%AA%E0%AE%A4%E0%AE%BF%E0%AE%B5%E0%AF%81%20%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D.%20%E0%AE%A4%E0%AF%87%E0%AE%A4%E0%AE%BF%2C%20%E0%AE%A8%E0%AE%BF%E0%AE%95%E0%AE%B4%E0%AF%8D%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%BF%20%E0%AE%B5%E0%AE%95%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%AF%E0%AE%BE%E0%AE%A9%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%AA%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AE%BF%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AA%E0%AE%95%E0%AE%BF%E0%AE%B0%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D%2C%20%E0%AE%A4%E0%AE%AF%E0%AE%B5%E0%AF%81%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%A4%E0%AF%81%20%E0%AE%95%E0%AE%BF%E0%AE%9F%E0%AF%88%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AE%A9%E0%AF%8D%E0%AE%AE%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%88%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%A4%E0%AF%86%E0%AE%B0%E0%AE%BF%E0%AE%B5%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B5%E0%AF%81%E0%AE%AE%E0%AF%8D.%20%E0%AE%A8%E0%AE%A9%E0%AF%8D%E0%AE%B1%E0%AE%BF%21" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span class="t-ta">வாட்ஸ்அப்</span><span class="t-en">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:10px;">
+    <div class="gallery-grid">
+      <a href="#"><img src="https://images.unsplash.com/photo-1650873442237-3838533a50be?w=600&q=80" alt="Wedding jewellery detail"></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1769598249975-cd4d74fb3881?w=600&q=80" alt="Hand crafted flower garlands"></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1650873441621-08dbceadb7b8?w=600&q=80" alt="Traditional bridal necklace"></a>
+      <a href="#"><img src="https://images.unsplash.com/photo-1650873329159-53682104c8a4?w=600&q=80" alt="Festive banana leaf meal"></a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-name">E.K.S<small class="t-ta">A முதல் Z வரை திருமண மேலாண்மை சேவை</small><small class="t-en">A to Z Marriage Management Service</small></div>
+        <p class="t-ta" style="margin-top:16px; max-width:320px;">திருமணம் முதல் ஷஷ்டியப்த பூர்த்தி வரை, ஒவ்வொரு நிகழ்ச்சியையும் பாரம்பரியத்துடன் நடத்தித் தருகிறோம்.</p>
+        <p class="t-en" style="margin-top:16px; max-width:320px;">From weddings to Shashtiabdapoorthi, every celebration handled with tradition and care.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="t-ta">முகவரி</h4>
+        <h4 class="t-en">Address</h4>
+        <div class="t-ta">34, தெற்கு வீதி,<br>திருக்கடையூர்,<br>மயிலாடுதுறை மாவட்டம்.</div>
+        <div class="t-en">34, South Street,<br>Thirukkadaiyur,<br>Mayiladuthurai District.</div>
+      </div>
+      <div class="footer-col">
+        <h4 class="t-ta">உங்கள்</h4>
+        <h4 class="t-en">Yours</h4>
+        <div class="t-ta">எம். என். எழில்நம்பி, M.C.A., B.G.L.<br>முன்னாள் ஊராட்சி தலைவர்</div>
+        <div class="t-en">M. N. Ezhilnambi, M.C.A., B.G.L.<br>Former Panchayat President</div>
+      </div>
+      <div class="footer-col">
+        <h4 class="t-ta">தொடர்பு</h4>
+        <h4 class="t-en">Contact</h4>
+        <a href="tel:+919751730232" class="footer-contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 97517 30232
+        </a>
+        <a href="https://wa.me/919751730232?text=%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D%21%20E.K.S%20Thirukadaiyur%20-%20%E0%AE%89%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AE%E0%AF%81%E0%AE%A9%E0%AF%8D%E0%AE%AA%E0%AE%A4%E0%AE%BF%E0%AE%B5%E0%AF%81%20%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AF%81%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D.%20%E0%AE%A4%E0%AF%87%E0%AE%A4%E0%AE%BF%2C%20%E0%AE%A8%E0%AE%BF%E0%AE%95%E0%AE%B4%E0%AF%8D%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AE%BF%20%E0%AE%B5%E0%AE%95%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%AF%E0%AE%BE%E0%AE%A9%20%E0%AE%9A%E0%AF%87%E0%AE%B5%E0%AF%88%E0%AE%95%E0%AE%B3%E0%AF%8D%20%E0%AE%AA%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AE%BF%E0%AE%AF%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%AA%E0%AE%95%E0%AE%BF%E0%AE%B0%E0%AF%8D%E0%AE%95%E0%AE%BF%E0%AE%B1%E0%AF%87%E0%AE%A9%E0%AF%8D%2C%20%E0%AE%A4%E0%AE%AF%E0%AE%B5%E0%AF%81%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AF%8D%E0%AE%A4%E0%AF%81%20%E0%AE%95%E0%AE%BF%E0%AE%9F%E0%AF%88%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%A4%E0%AE%A9%E0%AF%8D%E0%AE%AE%E0%AF%88%20%E0%AE%AE%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AF%81%E0%AE%AE%E0%AF%8D%20%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%88%20%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AE%B0%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%B3%E0%AF%88%20%E0%AE%A4%E0%AF%86%E0%AE%B0%E0%AE%BF%E0%AE%B5%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B5%E0%AF%81%E0%AE%AE%E0%AF%8D.%20%E0%AE%A8%E0%AE%A9%E0%AF%8D%E0%AE%B1%E0%AE%BF%21" target="_blank" rel="noopener" class="footer-contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span class="t-ta">வாட்ஸ்அப்</span><span class="t-en">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="t-ta">© <span id="yearTa"></span> E.K.S திருமண மேலாண்மை சேவை — திருக்கடையூர்</span>
+      <span class="t-en">© <span id="yearEn"></span> E.K.S Marriage Management Service — Thirukkadaiyur</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function setLang(l){
+    document.body.classList.remove('lang-en','lang-ta');
+    document.body.classList.add('lang-'+l);
+    document.documentElement.lang = l;
+    document.getElementById('btnTa').classList.toggle('active', l==='ta');
+    document.getElementById('btnEn').classList.toggle('active', l==='en');
+  }
+
+  window.addEventListener('scroll', function(){
+    document.getElementById('siteHeader').classList.toggle('scrolled', window.scrollY > 12);
+  });
+
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in-view'); } });
+  }, {threshold:.15});
+  document.querySelectorAll('.card, .reveal').forEach(el=>io.observe(el));
+
+  const y = new Date().getFullYear();
+  document.getElementById('yearTa').textContent = y;
+  document.getElementById('yearEn').textContent = y;
+</script>
+</body>
+</html>
